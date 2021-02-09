@@ -1,3 +1,9 @@
 micronaut:
   application:
     name: calculatorFrontend
+
+grpc:
+  channels:
+    backend:
+      plaintext: true
+      address: '${BACKEND_HOST:localhost}:${BACKEND_PORT:8081}'
